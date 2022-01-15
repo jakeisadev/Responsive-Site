@@ -59,6 +59,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 /* Media Queries*/
 @media (max-width: 320px) {
   header {
