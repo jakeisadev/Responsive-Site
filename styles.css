@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  font-size: 48px;
+}
+
+header {
+  display: flex;
+  font-family: "PT Serif", Helvetica, sans-serif;
+}
+/* Media Queries*/
+@media screen and (min-width: 320px) {
+  header {
+    align-items: center;
+  }
+}
