@@ -1,14 +1,28 @@
 * {
   font-family: "open-sans", sans-serif;
   text-align: center;
+  color: rgb(57, 57, 57);
+}
+
+body {
+  padding: 5%;
 }
 
 img {
   max-width: 100%;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style: none;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 20px;
+}
+
+.title {
+  font-size: 30x;
 }
