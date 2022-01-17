@@ -2,6 +2,7 @@
   font-family: "open-sans", sans-serif;
   text-align: center;
   color: rgb(57, 57, 57);
+  box-sizing: border-box;
 }
 
 body {
@@ -92,6 +93,7 @@ p a {
   body {
     width: 70%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   nav ul,
@@ -107,5 +109,20 @@ p a {
   }
   .container {
     display: grid;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 10px;
+  }
+  .items {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1023px) {
+  .container {
+    display: grid;
+    grid-template-columns: 438px 438px 438px;
+    grid-column-gap: 10px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
   }
 }
