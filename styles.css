@@ -5,12 +5,22 @@
 }
 
 body {
-  margin: 5%;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 img {
   max-width: 100%;
-  padding-bottom: 10px;
+}
+
+.background img {
+  width: 275px;
+  padding-bottom: 30px;
+}
+
+.background p {
+  padding-right: 10px;
 }
 
 ul {
@@ -74,4 +84,28 @@ p a {
 .name-1 {
   font-weight: bold;
   font-size: 15px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  nav ul,
+  .background {
+    display: flex;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+  .background {
+    flex-direction: row-reverse;
+  }
+  .container {
+    display: grid;
+  }
 }
