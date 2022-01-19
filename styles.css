@@ -117,12 +117,21 @@ p a {
   }
 }
 
-@media (min-width: 1024px) and (min-width: 1023px) {
+@media (min-width: 1024px) {
   .container {
     display: grid;
-    grid-template-columns: 438px 438px 438px;
+    grid-template-columns: 341px 341px 341px;
     grid-column-gap: 10px;
     margin-right: 0 auto;
     margin-left: 0 auto;
+    max-width: 100%;
+  }
+  .top {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .picture {
+    max-width: 100%;
   }
 }
