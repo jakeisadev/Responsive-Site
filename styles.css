@@ -80,13 +80,21 @@ a {
 
 .name {
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .name-1 {
   font-weight: bold;
   font-size: 15px;
-  margin-right: 10px;
+  margin-left: 20px;
+  position: absolute;
+  margin-right: 14px;
+  right: 20px;
+}
+
+.bottom-footer .list-color {
+  display: none;
+  padding: 0;
 }
 
 /* Media Queries */
@@ -171,6 +179,12 @@ a {
     padding-top: 0;
     padding-right: 0;
     margin-top: 5px;
+  }
+
+  .bottom-footer .list-color {
+    display: initial;
+    padding: 4px;
+    padding-top: 10px;
   }
 }
 
