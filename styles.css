@@ -43,13 +43,13 @@ a:hover {
   color: blue;
 }
 
+h1 {
+  font-size: 25px;
+}
+
 h2 {
   font-size: 25px;
   padding-bottom: 5px;
-}
-
-h3 {
-  font-style: 300;
 }
 
 p a {
@@ -65,7 +65,7 @@ p a {
 }
 
 .contact-container {
-  padding-top: 40px;
+  padding: 20px;
   background-color: rgba(112, 128, 144, 0.06);
 }
 
@@ -80,61 +80,93 @@ p a {
 
 .name {
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .name-1 {
   font-weight: bold;
   font-size: 15px;
+  margin-right: 10px;
 }
 
 /* Media Queries */
-
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   body {
     width: 70%;
-    margin: 0 auto;
     box-sizing: border-box;
+    width: 100vw;
   }
 
-  nav ul,
-  .background {
-    display: flex;
-  }
-
-  nav ul {
-    justify-content: center;
+  h1 {
+    margin-bottom: -20px;
   }
   .background {
-    flex-direction: row-reverse;
+    padding-bottom: 10px;
   }
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-  }
-  .items {
-    justify-items: center;
-  }
-}
 
-@media (min-width: 1024px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    margin-right: 0 auto;
-    margin-left: 0 auto;
-    max-width: 100%;
-  }
   .top {
-    display: flex;
-    margin-bottom: 20px;
+    background-color: rgba(112, 128, 144, 0.06);
   }
 
-  .picture {
+  img {
     max-width: 100%;
   }
-  .wrapper {
-    max-width: 100%;
+
+  .content-wrapper {
+    margin: 15px;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      width: 70%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .top {
+      background-color: transparent;
+    }
+
+    nav ul,
+    .background {
+      display: flex;
+      justify-content: center;
+    }
+
+    .background {
+      flex-direction: row-reverse;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+    }
+    .items {
+      justify-items: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      max-width: 100%;
+    }
+    .top,
+    nav ul {
+      display: flex;
+      margin-bottom: 5px;
+      align-items: center;
+      max-width: 100%;
+      justify-content: space-between;
+    }
+
+    .picture {
+      max-width: 100%;
+    }
+    .wrapper {
+      max-width: 100%;
+    }
   }
 }
