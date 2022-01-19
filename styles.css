@@ -188,6 +188,10 @@ a {
       padding: 10px;
     }
 
+    .background {
+      padding: 0px;
+    }
+
     .picture {
       max-width: 100%;
     }
