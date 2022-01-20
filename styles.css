@@ -23,6 +23,16 @@ img {
   padding-right: 10px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: 2px solid orange underline;
+}
+
 ul {
   list-style: none;
   font-weight: 600;
@@ -33,17 +43,18 @@ ul a {
   text-decoration: none;
 }
 
+ul .list-color {
+  color: black;
+}
+
 li {
   padding: 20px;
   font-size: 18px;
 }
 
-a:hover {
-  color: blue;
-}
-
 h1 {
-  font-size: 25px;
+  font-size: 64px;
+  font-family: "Luxurious Script", cursive;
 }
 
 h2 {
@@ -51,8 +62,13 @@ h2 {
   padding-bottom: 5px;
 }
 
-a {
-  color: black;
+.fact-container {
+  margin: 0 auto;
+}
+
+.fact-container ul .none {
+  list-style-type: disc;
+  color: blue;
   text-decoration: none;
 }
 
